@@ -8,11 +8,13 @@ st.set_page_config(
     initial_sidebar_state="collapsed",  # Развернуть боковую панель
 )
 
-# Текст по центру страницы
-st.columns(3)[1].header("👩🏻‍💻Примеры главы 1")
+st.header("👩🏻‍💻Листинги главы 1")
 
-# Контейнер
-cont_1 = st.container(width=300)
+# Боковая панель
+with st.sidebar:
+    # Контейнер
+    cont_1 = st.container(width=300)
+
 with cont_1:
     # Раскрывающийся список
     options = st.selectbox(
@@ -22,18 +24,17 @@ with cont_1:
         placeholder="Выберите листинг..."
     )
 
-# Элемент st.code - загрузить код листинга
-# path_file = 'pages/glava_1/first_app.py'
-# file = open(path_file, 'r')
-# code = file.read()
-
 # Контейнер
-cont_2 = st.container()
-with cont_2:
+cont = st.container(width=1000)
+with cont:
     if options is None:
         st.write('Листинг не выбран')
-    else:
-        st.write('Листинг 1.1 и результаты его выполнения')
-        with st.echo(code_location="above"):
-            import streamlit as st
-            st.title('Первое приложение на Streamlit')
+        st.image("Stream_Book.jpg", width=350)
+    elif options == "Листинг 1.1":
+        st.write('Код листинга 1.1')
+        path = 'pages/glava_1/listing_1_1.py'
+        file = open(path, 'r')
+        code = file.read()
+        st.code(code, language="python", line_numbers=True)
+        st.divider()  # Разделитель
+        st.page_link('pages/glava_1/listing_1_1.py', label='🚀Выполнить код')
