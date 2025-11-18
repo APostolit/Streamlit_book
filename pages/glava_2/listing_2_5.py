@@ -11,10 +11,9 @@ with open(pdf_file, "rb") as f:
 # Создать объект для вывода в HTML
 # pdf_d = (f'<iframe src="data:application/pdf;base64,{base64_pdf}"'
          # f' width="1000" height="800" type="application/pdf"></iframe>')
-# pdf_d = (f'<embed src="data:application/pdf;base64,{base64_pdf}"' 
-         # f' width="1000" height="800" type="application/pdf">')
-pdf_d = (f'<embed src="data:application/pdf;base64,{base64_pdf}" width="1000" height="800"'
-         f' alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">')
+pdf_d = (f'<embed src="data:application/pdf;base64,{base64_pdf}"' 
+         f' width="1000" height="800" type="application/pdf">')
+
 st.subheader(":blue[Содержимое PDF файла с оглавлением]")
 
 # Отобразить содержимое PDF файла
