@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # Текст по центру страницы
-st.columns(3)[1].header("👩🏻‍💻Примеры главы 9")
+st.header("👩🏻‍💻Листинги главы 10")
 
 # Контейнер
 cont_1 = st.container(width=300)
@@ -27,6 +27,7 @@ cont_2 = st.container()
 with cont_2:
     if options is None:
         st.write('Листинг не выбран')
+        st.image("Stream_Book.jpg", width=350)
     elif options == "Листинг 10.1":
         st.write('Код листинга 10.1')
         path = '.streamlit/config.toml'
