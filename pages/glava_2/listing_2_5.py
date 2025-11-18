@@ -15,4 +15,4 @@ pdf_display = (F'<embed src="data:application/pdf;base64,{base64_pdf}"'
 st.subheader(":blue[Содержимое PDF файла с оглавлением]")
 
 # Отобразить содержимое PDF файла
-st.markdown(body=pdf_display, unsafe_allow_html=True, width=800)
+st.markdown(body=pdf_display, unsafe_allow_html=True)
