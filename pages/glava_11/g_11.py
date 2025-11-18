@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # Текст по центру страницы
-st.columns(3)[1].header("👩🏻‍💻Примеры главы 11")
+st.header("👩🏻‍💻Листинги главы 11")
 
 # Контейнер
 cont_1 = st.container(width=300)
@@ -29,6 +29,7 @@ cont_2 = st.container()
 with cont_2:
     if options is None:
         st.write('Листинг не выбран')
+        st.image("Stream_Book.jpg", width=350)
     elif options == "Листинг 11.1":
         st.write('Код листинга 11.1')
         path = 'pages/glava_11/Class_SQL.py'
