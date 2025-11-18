@@ -9,10 +9,13 @@ st.set_page_config(
 )
 
 # Текст по центру страницы
-st.columns(3)[1].header("👩🏻‍💻Примеры главы 4")
+st.header("👩🏻‍💻Листинги главы 4")
 
-# Контейнер
-cont_1 = st.container(width=300)
+# Боковая панель
+with st.sidebar:
+    # Контейнер
+    cont_1 = st.container(width=300)
+
 with cont_1:
     # Раскрывающийся список
     options = st.selectbox("Листинги главы 4",
@@ -27,53 +30,44 @@ cont_2 = st.container()
 with cont_2:
     if options is None:
         st.write('Листинг не выбран')
+        st.image("Stream_Book.jpg", width=350)
     elif options == "Листинг 4.1":
-        st.write('Код листинга 4.1 и результаты его выполнения')
-        with st.echo(code_location="above"):
-            import streamlit as st
-
-            st.text('Элемент аудио проигрыватель st.audio')
-            st.audio("gaiti.mp3",
-                     format="audio/mpeg",
-                     loop=False)
+        st.write('Код листинга 4.1')
+        path = 'pages/glava_4/listing_4_1.py'
+        file = open(path, 'r')
+        code = file.read()
+        st.code(code, language="python", line_numbers=True)
+        st.divider()  # Разделитель
+        st.page_link('pages/glava_4/listing_4_1.py', label='🚀Выполнить код')
     elif options == "Листинг 4.2":
-        st.write('Код листинга 4.2 и результаты его выполнения')
-        with st.echo(code_location="above"):
-            import streamlit as st
-
-            st.text("Контейнер для вывода изображения")
-            st.image("AP_400.png",
-                     caption="Академия Python")
+        st.write('Код листинга 4.2')
+        path = 'pages/glava_4/listing_4_2.py'
+        file = open(path, 'r')
+        code = file.read()
+        st.code(code, language="python", line_numbers=True)
+        st.divider()  # Разделитель
+        st.page_link('pages/glava_4/listing_4_2.py', label='🚀Выполнить код')
     elif options == "Листинг 4.3":
-        st.write('Код листинга 4.3 и результаты его выполнения')
-        with st.echo(code_location="above"):
-            import streamlit as st
-
-            with st.sidebar:
-                st.text('Логотип, элемент st.logo')
-                st.logo(image='favicon.ico',
-                        link='https://apython.ru')
+        st.write('Код листинга 4.3')
+        path = 'pages/glava_4/listing_4_3.py'
+        file = open(path, 'r')
+        code = file.read()
+        st.code(code, language="python", line_numbers=True)
+        st.divider()  # Разделитель
+        st.page_link('pages/glava_4/listing_4_3.py', label='🚀Выполнить код')
     elif options == "Листинг 4.4":
-        st.write('Код листинга 4.4 и результаты его выполнения')
-        with st.echo(code_location="above"):
-            import streamlit as st
-
-            # Скрыть боковую панель
-            st.set_page_config(initial_sidebar_state="collapsed")
-
-            st.markdown("## Элемент для вывода pdf файлов st.pdf")
-
-            # Показать локальный pdf- файл
-            st.pdf("pdf/Python_vsem.pdf", height=400)
-
-            #  Показать загруженный pdf- файл
-            uploaded_file = st.file_uploader("Выберите PDF файл", type="pdf")
-            if uploaded_file is not None:
-                st.pdf(uploaded_file)
+        st.write('Код листинга 4.4')
+        path = 'pages/glava_4/listing_4_4.py'
+        file = open(path, 'r')
+        code = file.read()
+        st.code(code, language="python", line_numbers=True)
+        st.divider()  # Разделитель
+        st.page_link('pages/glava_4/listing_4_4.py', label='🚀Выполнить код')
     elif options == "Листинг 4.5":
-        st.write('Код листинга 4.5 и результаты его выполнения')
-        with st.echo(code_location="above"):
-            import streamlit as st
-
-            st.text('Элемент st.video')
-            st.video("Pingvin.mp4", format='mp4')
+        st.write('Код листинга 4.5')
+        path = 'pages/glava_4/listing_4_5.py'
+        file = open(path, 'r')
+        code = file.read()
+        st.code(code, language="python", line_numbers=True)
+        st.divider()  # Разделитель
+        st.page_link('pages/glava_4/listing_4_5.py', label='🚀Выполнить код')
