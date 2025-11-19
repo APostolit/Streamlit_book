@@ -161,3 +161,4 @@ with cont_2:
         st.code(code, language="python", line_numbers=True)
         st.divider()  # Разделитель
         st.page_link('pages/glava_7/listing_7_16.py', label='🚀Выполнить код')
+
