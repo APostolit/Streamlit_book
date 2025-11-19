@@ -99,7 +99,23 @@ pg_6_6 = st.Page('pages/glava_6/listing_6_6.py', title="🚀Выполнить 6
 pg_6_7 = st.Page('pages/glava_6/listing_6_7.py', title="🚀Выполнить 6.7")
 
 # Глава 7
-g_7 = st.Page(page="pages/glava_7/g_7.py", title="📕Примеры Главы 7")
+g_7 = st.Page(page="pages/glava_7/g_7.py", title="📕Листинги главы 7")
+pg_7_1 = st.Page('pages/glava_7/listing_7_1.py', title="🚀Выполнить 7.1")
+pg_7_2 = st.Page('pages/glava_7/listing_7_2.py', title="🚀Выполнить 7.2")
+pg_7_3 = st.Page('pages/glava_7/listing_7_3.py', title="🚀Выполнить 7.3")
+# pg_7_4 = st.Page('pages/glava_7/listing_7_4.py', title="🚀Выполнить 7.4")
+pg_7_5 = st.Page('pages/glava_7/listing_7_5.py', title="🚀Выполнить 7.5")
+pg_7_6 = st.Page('pages/glava_7/listing_7_6.py', title="🚀Выполнить 7.6")
+pg_7_7 = st.Page('pages/glava_7/listing_7_7.py', title="🚀Выполнить 7.7")
+pg_7_8 = st.Page('pages/glava_7/listing_7_8.py', title="🚀Выполнить 7.8")
+# pg_7_9 = st.Page('pages/glava_7/listing_7_9.py', title="🚀Выполнить 7.9")
+# pg_7_10 = st.Page('pages/glava_7/listing_7_10.py', title="🚀Выполнить 7.10")
+# pg_7_11 = st.Page('pages/glava_7/listing_7_11.py', title="🚀Выполнить 7.11")
+# pg_7_12 = st.Page('pages/glava_7/listing_7_12.py', title="🚀Выполнить 7.12")
+pg_7_13 = st.Page('pages/glava_7/listing_7_13.py', title="🚀Выполнить 7.13")
+# pg_7_14 = st.Page('pages/glava_7/listing_7_14.py', title="🚀Выполнить 7.14")
+pg_7_15 = st.Page('pages/glava_7/listing_7_15.py', title="🚀Выполнить 7.15")
+pg_7_16 = st.Page('pages/glava_7/listing_7_16.py', title="🚀Выполнить 7.16")
 
 # Глава 8
 g_8 = st.Page(page="pages/glava_8/g_8.py", title="📕Листинги Главы 8")
@@ -147,7 +163,8 @@ pages = {
     "Глава 5": [g_5,  pg_5_1,  pg_5_2,  pg_5_3,  pg_5_4,  pg_5_5,  pg_5_6,  pg_5_7,  pg_5_8,
                 pg_5_9,  pg_5_10,  pg_5_11,  pg_5_12,  pg_5_13,  pg_5_14,  pg_5_15,  pg_5_16],
     "Глава 6": [g_6, pg_6_1, pg_6_2, pg_6_3, pg_6_4, pg_6_5, pg_6_6, pg_6_7],
-    "Глава 7": [g_7],
+    "Глава 7": [g_7, pg_7_1, pg_7_2, pg_7_3, pg_7_5, pg_7_6, pg_7_7, pg_7_8,
+                pg_7_13, pg_7_15, pg_7_16],
     "Глава 8": [g_8, pg_8_1, pg_8_2, pg_8_3, pg_8_4, pg_8_5, pg_8_6, pg_8_7, pg_8_8,
                 pg_8_9, pg_8_10, pg_8_11, pg_8_12],
     "Глава 9": [g_9, pg_9_1, pg_9_2, pg_9_3, pg_9_4, pg_9_5, pg_9_6, pg_9_7, pg_9_8,
